@@ -1,0 +1,157 @@
+body{
+    background-color:#d5d5ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size:20px;
+}
+
+#title{
+    text-align:center;
+}
+.iconmenu{
+    height: 32px;
+    width: 32px;
+}
+.navbar{
+    background-color: #d5d5ff;
+    margin:0;
+    padding:0;
+    height: 39px;
+    width: auto;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+#bottom a{
+    background-color: blue;
+    color:white;
+    text-decoration: none;
+    font-size: 32px;
+    margin-left: 0;
+    border-radius: 5px;
+    padding: 5px 0px 0px 2px;
+}
+a{
+    margin-left:10px;
+}
+#bottom a:hover:not(.active){
+    background-color: rgb(95, 145, 252);
+}
+
+.nav{
+    display: inline;
+}
+.param{
+    position:block;
+    float:inline-end;
+    height: 40px;
+}
+.active{
+    background-color: rgb(70, 110, 196);
+}
+
+/*Boîte de dialogue*/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: -moz-linear-gradient(#0077ff, #0026ff);
+    background: -webkit-linear-gradient(#0077ff, #0026ff);
+    background: -o-linear-gradient(#0077ff, #0026ff);
+}
+
+.close {
+    background: #606061;
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+ .close:hover {
+     background: #f00;
+}
+
+.ok {
+    margin: 10px;
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #f00;
+}
+
+    .ok:hover {
+        color: red;
+        text-decoration: none;
+        background-color: #fff;
+    }
+    /*barre de recherche*/
+    #searchbar{
+        
+        padding:15px;
+        border-radius: 10px;
+        width: 150px;
+      }
+      
+      input[type=text] {
+         width: 30%;
+      }
+    
+      /* When the input field gets focus,
+           change its width to 100% */
+     
+    
+     #list{
+       font-size:  1.5em;
+       margin-left: 90px;
+      }
+    
+   .error{
+      display: list-item;    
+     } 
+article{
+    position: relative;
+    background-color: white;
+    
+}
+.illustration{
+    height: 205.5px;
+    width: 365px;
+    text-align:center;
+}
